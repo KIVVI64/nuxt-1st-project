@@ -9,6 +9,7 @@
         <p class="text-xl my-7">Cena: ${{ product.price }}</p>
         <h3 class="font-bold border-b-2 mb-4 pb-2">Opis: </h3>
         <p class="mb-7">{{ product.description }}</p>
+        <button class="btn"><Icon name="ic:baseline-add-shopping-cart" /><span>Dodaj do koszyka</span></button>
       </div>
     </div>
   </div>

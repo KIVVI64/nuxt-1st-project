@@ -12,5 +12,8 @@ export default defineNuxtConfig({
         { name: 'description', content: 'This is my first nuxt project. Here I discover basic concepts.' }
       ]
     }
+  },
+  runtimeConfig: {
+    currencyKey: process.env.CURRENCY_API_KEY
   }
 })

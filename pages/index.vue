@@ -13,7 +13,15 @@
     </ul>
     <br>
     <p>Powodzenia!</p>
+    <br>
+    <p>Zawartość useState('searchQuery'): <b>{{ useSearchQuery }}</b></p>
+    <p>WOW ale to zajebiste to wyżej xD</p>
+    <br>
     <p>Dal testów:</p>
     <NuxtLink to="/siema">ten link nie istnieje</NuxtLink>
   </div>
 </template>
+
+<script setup>
+const useSearchQuery = useState('searchQuery')
+</script>

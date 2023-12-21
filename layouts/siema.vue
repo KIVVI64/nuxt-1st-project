@@ -6,7 +6,7 @@
           <NuxtLink to="/updv" class="font-bold">Uczeń Plus Data Viewer</NuxtLink>
           <ul class="flex gap-4">
             <li><NuxtLink to="/updv/about" class="btn">Plany i rozmyślenia</NuxtLink></li>
-            <li><NuxtLink to="/">Wróć na główną</NuxtLink></li>
+            <li><NuxtLink to="/updv/search">Szukaj</NuxtLink></li>
           </ul>
         </nav>
       </div>
@@ -15,7 +15,7 @@
       <slot />
     </main>
     <footer class="bg-black shadow-sm text-center p-4">
-      <div class="container text-white">Grudzień 2023 - Marcel Maruszak</div>
+      <div class="container text-white">Grudzień 2023 - Uczeń+</div>
     </footer>
   </div>
 </template>

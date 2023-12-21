@@ -1,6 +1,7 @@
 <template>
   <div>
     <h1>This is index products page.</h1>
+    <p>Załadowanych produktów: {{ products.length }}</p>
     <NuxtLink to="/products/ss">ss prod</NuxtLink>
     <div class="grid grid-cols-4 gap-5">
       <div v-for="p in products">

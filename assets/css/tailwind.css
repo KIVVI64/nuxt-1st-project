@@ -14,6 +14,10 @@ body {
   @apply mx-1 text-xl;
 }
 
+.nice-pre {
+  @apply block whitespace-pre overflow-x-scroll text-gray-100 bg-gray-900 p-10 rounded-lg
+}
+
 @layer components {
   .btn {
     @apply bg-blue-500 text-white px-3 py-2 rounded-md text-sm;

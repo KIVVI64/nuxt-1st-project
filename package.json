@@ -16,6 +16,7 @@
     "@vueuse/nuxt": "^10.7.0",
     "nuxt": "^3.8.2",
     "nuxt-icon": "^0.6.7",
+    "tailwind-material-colors": "^1.2.0",
     "vue": "^3.3.12",
     "vue-router": "^4.2.5"
   }

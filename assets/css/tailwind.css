@@ -3,27 +3,36 @@
 @tailwind utilities;
 
 body {
-  @apply bg-gray-100;
+  @apply bg-background;
 }
 
 .container {
   @apply mx-auto px-4;
 }
 
-.icon {
+.btn > .icon {
   @apply mx-1 text-xl;
 }
 
 .nice-pre {
-  @apply block whitespace-pre overflow-x-scroll text-gray-100 bg-gray-900 p-10 rounded-lg
+  @apply block whitespace-pre overflow-x-scroll text-on-primary p-10 rounded-lg;
 }
 
 @layer components {
   .btn {
-    @apply bg-blue-500 text-white px-3 py-2 rounded-md text-sm;
+    @apply bg-primary px-3 py-2 rounded-md text-sm;
   }
   .card {
-    @apply bg-white p-3 rounded-md shadow-md h-full;
+    @apply bg-surface-variant p-3 rounded-md shadow-md h-full;
+  }
+  .chip {
+    @apply inline px-4 pb-1 pt-0.5 border rounded-lg mr-2;
+  }
+  .chip-icon {
+    @apply inline px-4 pl-1 pb-1 pt-0.5 border rounded-lg mr-2;
+    .icon {
+      @apply text-3xl pb-2 pt-1;
+    }
   }
   
 }

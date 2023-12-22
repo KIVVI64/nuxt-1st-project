@@ -1,6 +1,6 @@
 <template>
   <div>
-    <header class="bg-teal-600 shadow-sm">
+    <header class="bg-surface shadow-md">
       <div class="container">
         <nav class="p-4 flex justify-between">
           <NuxtLink to="/" class="font-bold">Fancy LOGO</NuxtLink>

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <header class="bg-white shadow-sm">
+    <header class="bg-surface shadow-sm">
       <div class="container">
         <nav class="p-4 flex justify-between">
           <NuxtLink to="/updv" class="font-bold">Uczeń Plus Data Viewer</NuxtLink>
@@ -15,7 +15,7 @@
       <slot />
     </main>
     <footer class="bg-black shadow-sm text-center p-4">
-      <div class="container text-white">Grudzień 2023 - Uczeń+</div>
+      <div class="container text-white">12.2023-04.2024 - Uczeń+</div>
     </footer>
   </div>
 </template>

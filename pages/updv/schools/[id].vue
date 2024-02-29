@@ -14,10 +14,10 @@
       <h1 class="text-2xl ml-2">Nauczyciele w tej szkole: {{ teachers.length }}</h1>
       <div class="relative overflow-x-auto rounded-lg">
         <table
-          class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400"
+          class="w-full text-sm text-left"
         >
           <thead
-            class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400"
+            class="text-xs uppercase bg-surface-variant"
           >
             <tr>
               <th scope="col" class="px-6 py-3">name_first</th>
@@ -27,7 +27,7 @@
             </tr>
           </thead>
           <tbody>
-            <tr v-for="teacher in teachers" class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+            <tr v-for="teacher in teachers" class="bg-surface-variant border-t">
               <UpdvTeacherListElement :teacher="teacher" />
             </tr>
           </tbody>

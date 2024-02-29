@@ -1,7 +1,7 @@
 <template>
   <div class="container mt-7">
     <div v-if="teacherPending">
-      <pre class="nice-pre">Ładownaie...</pre>
+      <pre class="nice-pre">Ładownaie... {{ id }}</pre>
     </div>
     <div v-else>
       <pre class="nice-pre">{{ teacher }}</pre>

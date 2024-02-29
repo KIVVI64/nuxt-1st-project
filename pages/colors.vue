@@ -13,7 +13,7 @@
               alt="Monstera"
             />
             <div class="mt-7 container">
-              <p class="text-lg text-justify">Unleash the extraordinary with Monstera Unique: a botanical masterpiece that adds a touch of jungle allure to your indoor oasis.</p>
+              <p class="text-lg text-center">Unleash the extraordinary with Monstera Unique: a botanical masterpiece that adds a touch of jungle allure to your indoor oasis.</p>
             </div>
           </div>
         </div>

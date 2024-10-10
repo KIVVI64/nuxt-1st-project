@@ -63,7 +63,7 @@ definePageMeta({
 const { id } = useRoute().params;
 
 // Teacher
-const teacherUri = "https://uczenplus.api.soniw.pl/uczen-plus-api/v1/teacher/";
+const teacherUri = "https://kivvi.iqhs.pl/uczen-plus-api/v1/teacher/";
 const { pending: teacherPending, data: teacher } = await useFetch(
   teacherUri + id,
   {
@@ -74,7 +74,7 @@ const { pending: teacherPending, data: teacher } = await useFetch(
 
 // Teacher Info
 const infoUri =
-  "https://uczenplus.api.soniw.pl/uczen-plus-api/v1/teacher_info/teacher/";
+  "https://kivvi.iqhs.pl/uczen-plus-api/v1/teacher_info/teacher/";
 const { pending: teacherInfoPending, data: teacherInfo } = await useFetch(
   infoUri + id,
   {
@@ -85,7 +85,7 @@ const { pending: teacherInfoPending, data: teacherInfo } = await useFetch(
 
 // Teacher Facts
 const factsUri =
-  "https://uczenplus.api.soniw.pl/uczen-plus-api/v1/teacher_facts/teacher/";
+  "https://kivvi.iqhs.pl/uczen-plus-api/v1/teacher_facts/teacher/";
 const { pending: teacherFactsPending, data: teacherFacts } = await useFetch(
   factsUri + id,
   {

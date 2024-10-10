@@ -90,7 +90,7 @@ function filterState(arr, wojewudztwo) {
 
 
 const { pending: schoolPending, data: schools } = await useFetch(
-  "https://uczenplus.api.soniw.pl/uczen-plus-api/v1/school", {
+  "https://kivvi.iqhs.pl/uczen-plus-api/v1/school", {
     lazy: true,
     server: false,
     onResponse({ request, response, options }) {

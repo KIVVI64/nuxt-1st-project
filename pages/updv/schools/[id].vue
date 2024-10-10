@@ -43,8 +43,8 @@ definePageMeta({
 });
 
 const { id } = useRoute().params;
-const school_uri = "https://uczenplus.api.soniw.pl/uczen-plus-api/v1/school/";
-const teachers_uri = "https://uczenplus.api.soniw.pl/uczen-plus-api/v1/teacher/school/";
+const school_uri = "https://kivvi.iqhs.pl/uczen-plus-api/v1/school/";
+const teachers_uri = "https://kivvi.iqhs.pl/uczen-plus-api/v1/teacher/school/";
 
 //złap dane szkoły
 const { pending: schoolPending, data: school } = await useFetch(school_uri + id, {

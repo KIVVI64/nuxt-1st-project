@@ -248,7 +248,7 @@ async function refreshWeather() {
     const parsedLocation = await locationData.json();
     const currentUserLocation = parsedLocation.IPv4;
 
-    const weatherApi = `https://cors-anywhere.herokuapp.com/https://api.weatherapi.com/v1/forecast.json?key=${weatheriKey}&q=${currentUserLocation}&days=4&aqi=no&alerts=yes`;
+    const weatherApi = `https://api.weatherapi.com/v1/forecast.json?key=${weatheriKey}&q=${currentUserLocation}&days=4&aqi=no&alerts=yes`;
     const data = await fetch(weatherApi);
     const parsedData = await data.json();
 

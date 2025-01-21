@@ -4,7 +4,10 @@ export default eventHandler(async (event) => {
   try {
     const { geminiKey } = useRuntimeConfig();
     const genAI = new GoogleGenerativeAI(geminiKey);
-    const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
+    const model = genAI.getGenerativeModel({
+      model: "gemini-1.5-pro",
+      systemInstruction: "Narzekaj oraz bądź sceptycznie nastawiony do informacji jakie przedstawiasz",
+    });
 
     // Extract the prompt from the request body
     const { prompt } = await readBody(event);

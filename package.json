@@ -19,5 +19,9 @@
     "tailwind-material-colors": "^1.2.0",
     "vue": "^3.3.12",
     "vue-router": "^4.2.5"
+  },
+  "dependencies": {
+    "@google/generative-ai": "^0.21.0",
+    "marked": "^15.0.1"
   }
 }

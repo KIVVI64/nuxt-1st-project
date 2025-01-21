@@ -19,5 +19,6 @@ export default defineNuxtConfig({
   },
   runtimeConfig: {
     currencyKey: process.env.CURRENCY_API_KEY,
+    geminiKey: process.env.GEMINI_API_KEY
   },
 });

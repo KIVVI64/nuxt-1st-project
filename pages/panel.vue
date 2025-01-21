@@ -242,13 +242,13 @@ function showNotification(message, success) {
 
 async function refreshWeather() {
   try {
-    const apiKey = "5c9cc8a12d5b4bde897200036240110";
+    const { weatheriKey } = useRuntimeConfig();
     const geoLocation = "https://geolocation-db.com/json/";
     const locationData = await fetch(geoLocation);
     const parsedLocation = await locationData.json();
     const currentUserLocation = parsedLocation.IPv4;
 
-    const weatherApi = `https://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${currentUserLocation}&days=4&aqi=no&alerts=yes`;
+    const weatherApi = `https://cors-anywhere.herokuapp.com/https://api.weatherapi.com/v1/forecast.json?key=${weatheriKey}&q=${currentUserLocation}&days=4&aqi=no&alerts=yes`;
     const data = await fetch(weatherApi);
     const parsedData = await data.json();
 

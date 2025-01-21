@@ -242,13 +242,13 @@ function showNotification(message, success) {
 
 async function refreshWeather() {
   try {
-    const { weatheriKey } = useRuntimeConfig();
+    const { weatherKey } = useRuntimeConfig();
     const geoLocation = "https://geolocation-db.com/json/";
     const locationData = await fetch(geoLocation);
     const parsedLocation = await locationData.json();
     const currentUserLocation = parsedLocation.IPv4;
 
-    const weatherApi = `https://api.weatherapi.com/v1/forecast.json?key=${weatheriKey}&q=${currentUserLocation}&days=4&aqi=no&alerts=yes`;
+    const weatherApi = `https://api.weatherapi.com/v1/forecast.json?key=${weatherKey}&q=${currentUserLocation}&days=4&aqi=no&alerts=yes`;
     const data = await fetch(weatherApi);
     const parsedData = await data.json();
 

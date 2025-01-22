@@ -21,5 +21,8 @@ export default defineNuxtConfig({
     currencyKey: process.env.CURRENCY_API_KEY,
     geminiKey: process.env.GEMINI_API_KEY,
     weatherKey: process.env.WEATHER_API_KEY,
+    public: {
+      weatherKey: process.env.WEATHER_API_KEY,
+    }
   },
 });

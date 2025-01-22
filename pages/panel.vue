@@ -113,6 +113,7 @@ definePageMeta({
 import { ref, onMounted, watch } from "vue";
 import Chart from "chart.js/auto";
 import { marked } from "marked"; // Style for md format
+const config = useRuntimeConfig()
 
 //Gemini AI
 const prompt = ref("Ile jest mieszkańców w Polsce?");
@@ -242,7 +243,11 @@ function showNotification(message, success) {
 
 async function refreshWeather() {
   try {
-    const { weatherKey } = useRuntimeConfig();
+    
+    //console.log('Runtime config:', config)
+    const weatherKey = config.public.weatherKey;
+    //console.log(weatherKey);
+    
     const geoLocation = "https://geolocation-db.com/json/";
     const locationData = await fetch(geoLocation);
     const parsedLocation = await locationData.json();

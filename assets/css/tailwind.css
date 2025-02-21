@@ -57,7 +57,7 @@ input {
 }
 
 .nice-pre {
-  @apply block whitespace-pre overflow-x-scroll text-on-primary bg-black p-10 rounded-lg;
+  @apply block whitespace-pre overflow-x-scroll text-primary-light bg-black p-10 rounded-lg;
 }
 
 @layer components {
@@ -65,10 +65,13 @@ input {
     @apply bg-primary px-3 py-2 rounded-md text-sm;
   }
   .card {
-    @apply bg-surface-variant p-3 rounded-md shadow-md h-full;
+    @apply bg-surface-variant p-3 rounded-md shadow-md;
   }
   .chip {
     @apply inline px-4 pb-1 pt-0.5 border rounded-lg mr-2;
+  }
+  .chip-small {
+    @apply inline px-2 border rounded-lg mr-2;
   }
   .chip-icon {
     @apply inline px-4 pl-0 pb-1 pt-0.5 border rounded-lg mr-2;

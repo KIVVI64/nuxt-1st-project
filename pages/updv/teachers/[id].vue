@@ -4,6 +4,28 @@
       <pre class="nice-pre">Ładownaie... {{ id }}</pre>
     </div>
     <div v-else>
+      <div class="min-h-screen">
+        <UpdvTeacherHeader :teacher="teacher[0]" />
+        <main class="mx-auto py-8">
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="md:col-span-2">
+              <div class="card">
+                <UpdvTeacherQuotes :teacherFacts="teacherFacts" />
+              </div>
+              <div class="card mt-8">
+                <UpdvTeacherTrivia :teacherFacts="teacherFacts" />
+              </div>
+            </div>
+            <div>
+              <div>
+                <div class="card">
+                  <UpdvTeacherInfo />
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
       <pre class="nice-pre">{{ teacher }}</pre>
     </div>
   </div>
@@ -63,7 +85,7 @@ definePageMeta({
 const { id } = useRoute().params;
 
 // Teacher
-const teacherUri = "https://kivvi.iqhs.pl/uczen-plus-api/v1/teacher/";
+const teacherUri = "/api/teacher/";
 const { pending: teacherPending, data: teacher } = await useFetch(
   teacherUri + id,
   {
@@ -72,20 +94,9 @@ const { pending: teacherPending, data: teacher } = await useFetch(
   }
 );
 
-// Teacher Info
-const infoUri =
-  "https://kivvi.iqhs.pl/uczen-plus-api/v1/teacher_info/teacher/";
-const { pending: teacherInfoPending, data: teacherInfo } = await useFetch(
-  infoUri + id,
-  {
-    lazy: true,
-    server: false,
-  }
-);
-
 // Teacher Facts
 const factsUri =
-  "https://kivvi.iqhs.pl/uczen-plus-api/v1/teacher_facts/teacher/";
+  "/api/teacher_facts/teacher/";
 const { pending: teacherFactsPending, data: teacherFacts } = await useFetch(
   factsUri + id,
   {
@@ -93,6 +104,8 @@ const { pending: teacherFactsPending, data: teacherFacts } = await useFetch(
     server: false,
   }
 );
+console.log(teacherFacts);
+
 
 /*if (!school.value) {
   throw createError({
